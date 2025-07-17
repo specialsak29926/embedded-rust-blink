@@ -20,10 +20,10 @@ This project demonstrates how to blink the onboard LED on a Raspberry Pi Pico (R
 - Raspberry Pi Pico board
 
 ## Project Structure
-- `src/main.rs` — Main application (LED blink logic)
-- `memory.x` — Linker script for RP2040 memory layout
-- `.cargo/config.toml` — Cargo configuration for correct linking
-- `build.rs` — Ensures `memory.x` is included in the build
+- `src/main.rs` -Main application (LED blink logic)
+- `memory.x` - Linker script for RP2040 memory layout
+- `.cargo/config.toml` -Cargo configuration for correct linking
+- `build.rs` -Ensures `memory.x` is included in the build
 
 ## Importance of `memory.x` and `build.rs`
 
