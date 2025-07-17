@@ -1,0 +1,16 @@
+[build]
+target = "thumbv6m-none-eabi"
+
+[unstable]
+build-std = ["core"]
+
+[profile.release]
+codegen-units = 1
+debug = true
+lto = true
+opt-level = "s"
+
+[target.thumbv6m-none-eabi]
+rustflags = [
+  "-C", "link-arg=-Tlink.x",
+]

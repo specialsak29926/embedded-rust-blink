@@ -1,0 +1,24 @@
+[package]
+name = "hello-rust"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+[dependencies]
+rp-pico = "0.8.0"
+embedded-hal = "0.2.7"
+cortex-m-rt = "0.7.3"
+panic-halt = "0.2.0"
+
+[profile.dev]
+debug = true
+codegen-units = 1
+lto = false
+incremental = false
+opt-level = "z"
+
+[profile.release]
+debug = false
+codegen-units = 1
+lto = true
+incremental = false
+opt-level = "z"
